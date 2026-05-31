@@ -24,17 +24,19 @@ The OPAMP was simulated using LTspice, achieving the following results which suc
 | **Power Dissipation(No Inputs) (uW)** | < 300 uW | 287.08 uW |
 
 ## AC Analysis
-![AC Gain Plot](path/to/ac_gain_plot.png) <!-- Please upload and replace with the actual path to your plot image -->
+<img width="789" height="378" alt="image" src="https://github.com/user-attachments/assets/1ff87d3f-e7e4-43ef-ad7c-0c5e4e849a46" />
+
 
 AC analysis of an OTA is used to determine its frequency response, including gain and bandwidth. By applying a small-signal AC input, parameters like gain, phase margin, and unity-gain bandwidth can be evaluated. It helps in assessing the stability and performance of the amplifier in the frequency domain. **The AC Gain = 60.43 dB, which is near the required gain 60 dB and Phase Margin = 63.04°, greater than 60°.**
 
 ## DC Analysis
-![DC Analysis Plot](path/to/dc_analysis_plot.png) <!-- Please upload and replace with the actual path to your plot image -->
+<img width="748" height="332" alt="image" src="https://github.com/user-attachments/assets/d2c7671d-be48-4cc7-851d-47ba94733dd1" />
+
 
 DC Analysis of an OTA is used to study its steady-state behavior by sweeping input voltages. It helps determine parameters like operating point, output swing, and input common-mode range (ICMR). This analysis ensures that the transistors operate in the correct region for proper amplifier functioning. **ICMR ≈ 0.7 V to 1.6 V.**
 
 ## Slew Rate
-![Slew Rate Plot](path/to/slew_rate_plot.png) <!-- Please upload and replace with the actual path to your plot image -->
+<img width="788" height="376" alt="image" src="https://github.com/user-attachments/assets/099640ae-df9d-4582-85cc-7dd6aaa129e0" />
 
 Slew rate: Which is measured in volts per microsecond, is the fastest rate at which an op amp's output voltage can fluctuate. The slew rate is calculated by introducing a significant signal step, such as one volt, to the op amp's input.
 **ΔV = 1.06 - 0.94 = 0.12V.**
@@ -43,24 +45,24 @@ Slew rate: Which is measured in volts per microsecond, is the fastest rate at wh
 Thus we get the exact slew rate that we want.
 
 ## Common Mode Gain
-![Common Mode Gain Plot](path/to/common_mode_gain_plot.png) <!-- Please upload and replace with the actual path to your plot image -->
+<img width="788" height="375" alt="image" src="https://github.com/user-attachments/assets/6ccc7662-5c50-49cf-846d-e7c7ba20a1e3" />
+
 
 COMMON MODE GAIN: Common-mode gain of an OTA represents the amplification of signals that are identical at both inputs. Ideally, it should be very low to reject noise and interference present on both inputs. It is used to evaluate the common-mode rejection capability of the amplifier. **Here the Common Mode Gain we are getting is around -14.451dB, which is near to what we theoretically want.**
 
 ## Power Supply Rejection Ratio (PSRR)
-![PSRR Plot](path/to/psrr_plot.png) <!-- Please upload and replace with the actual path to your plot image -->
+<img width="788" height="374" alt="image" src="https://github.com/user-attachments/assets/7feb54b2-a26c-4473-9e0f-11a4ad7af871" />
+
 
 PSRR: Power Supply Rejection Ratio (PSRR) measures the ability of an OTA to suppress variations in the power supply voltage. It indicates how much supply noise affects the output.
 A high PSRR ensures better stability and accurate signal amplification in the presence of supply fluctuations. **Getting PSRR around -77.327 dB.**
 
-## Common-Mode Rejection Ratio (CMRR)
-![CMRR Plot](path/to/cmrr_plot.png) <!-- Please upload and replace with the actual path to your plot image -->
+## INPUT COMMON MODE RANGE:
+<img width="787" height="377" alt="image" src="https://github.com/user-attachments/assets/8b3eb4b6-446c-433d-853f-1b7d74900aab" />
 
-CMRR (Common-Mode Rejection Ratio) is a measure of how well a differential amplifier rejects signals that are common to both inputs (common-mode signals). It is defined as the ratio of differential gain to common-mode gain. A higher CMRR means better ability to amplify only the desired differential signal while ignoring noise or interference.
+ICMR: Input common mode range(ICMR) is calculated by providing negative feedback to
+the opamp. In this scenario opamp acts as a unity gain buffer. ICMR ≈ 0.7 V to 1.6 V.
 
-`CMRR(dB) = 20 log (Ad / Acm) = Ad(dB) - Acm(dB)`
-
-**Therefore CMRR = AC Gain - Common Mode Gain = 60.43 dB - (-14.451 dB) = 74.451 dB.**
 
 ## References
 1. Behzad Razavi. *Design of Analog CMOS Integrated Circuits*. McGraw Hill Higher Education; 2001.
