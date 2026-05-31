@@ -1,12 +1,12 @@
 # Design of a Two-Stage Operational Amplifier with Miller Compensation
 
-A complete Opamp design project with extensive focus on amplifier specifications, implemented in 0.5 µm CMOS technology.
+A complete Opamp design project with extensive focus on amplifier specifications, implemented in a TSMC 180nm BSIM3 Level 49 CMOS model environment.
 
 ## Overview
 This project presents the complete design and simulation procedure for a two-stage CMOS operational amplifier utilizing Miller compensation. The design focuses on meeting specific performance targets and has been rigorously verified through LTSPICE simulations.
 
 ## Technology & Tools
-* **Technology Node:** 0.5 µm CMOS
+* **Technology Node:** TSMC 180nm BSIM3 Level 49 CMOS
 * **Simulation Tool:** LTSPICE
 
 ## Simulated Performance Results
