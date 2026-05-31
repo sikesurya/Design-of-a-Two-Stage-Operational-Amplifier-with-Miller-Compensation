@@ -24,7 +24,7 @@ The OPAMP was simulated using LTspice, achieving the following results which suc
 | **Power Dissipation(No Inputs) (uW)** | < 300 uW | 287.08 uW |
 
 ## AC Analysis
-![AC Gain Plot](p"C:\Users\pschd\OneDrive\Pictures\Screenshots\Screenshot 2026-05-31 101220.png") <!-- Please upload and replace with the actual path to your plot image -->
+<img width="937" height="449" alt="image" src="https://github.com/user-attachments/assets/61aadda2-44e4-43ec-beb3-7d9c093e3509" />
 
 AC analysis of an OTA is used to determine its frequency response, including gain and bandwidth. By applying a small-signal AC input, parameters like gain, phase margin, and unity-gain bandwidth can be evaluated. It helps in assessing the stability and performance of the amplifier in the frequency domain. **The AC Gain = 60.43 dB, which is near the required gain 60 dB and Phase Margin = 63.04°, greater than 60°.**
 
