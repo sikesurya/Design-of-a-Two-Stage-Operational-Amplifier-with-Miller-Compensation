@@ -12,18 +12,16 @@ This project presents the complete design and simulation procedure for a two-sta
 ## Simulated Performance Results
 The OPAMP was simulated using LTspice, achieving the following results which successfully satisfied the target specifications:
 
-| Parameter | Simulated Value |
-| :--- | :--- |
-| **DC Gain** | 63.5 dB |
-| **Phase Margin** | 61.8° |
-| **Unity Gain Bandwidth** | 21 MHz |
-| **Slew Rate** | 24 V/µs |
-| **Power Dissipation** | 1.88 mW |
-| **CMRR** | 85.2 dB |
-| **ICMR (+)** | 2.45 V |
-| **ICMR (-)** | -0.5 V |
-| **Output Swing (+)** | 2.3 V |
-| **Output Swing (-)** | -2.2 V |
+| OPAMP PARAMETERS | THEORITICAL VALUES (Required) | ACTUAL VALUES |
+| :--- | :--- | :--- |
+| **AC Gain(dB)** | 60 dB | 60.43 dB |
+| **Phase Margin(deg)** | > 60° | 63.04° |
+| **Unity Gain Bandwidth (MHz)** | 30 MHz | 28.065 MHz |
+| **Common Mode Gain(dB)** | -11.47 dB | -14.451 dB |
+| **CMRR(dB)** | 71.47 dB | 74.451 dB |
+| **Slew Rate(V/uS)** | 20 V/uS | 20V/uS |
+| **PSRR(dB)** | - 77.327 dB | -77.327 dB |
+| **Power Dissipation(No Inputs) (uW)** | < 300 uW | 287.08 uW |
 
 ## References
 1. Behzad Razavi. *Design of Analog CMOS Integrated Circuits*. McGraw Hill Higher Education; 2001.
