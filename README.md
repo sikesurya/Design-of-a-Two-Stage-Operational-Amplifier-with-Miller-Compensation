@@ -23,6 +23,11 @@ The OPAMP was simulated using LTspice, achieving the following results which suc
 | **PSRR(dB)** | - 77.327 dB | -77.327 dB |
 | **Power Dissipation(No Inputs) (uW)** | < 300 uW | 287.08 uW |
 
+## AC Analysis
+![AC Gain Plot](path/to/ac_gain_plot.png) <!-- Please upload and replace with the actual path to your plot image -->
+
+AC analysis of an OTA is used to determine its frequency response, including gain and bandwidth. By applying a small-signal AC input, parameters like gain, phase margin, and unity-gain bandwidth can be evaluated. It helps in assessing the stability and performance of the amplifier in the frequency domain. **The AC Gain = 60.43 dB, which is near the required gain 60 dB and Phase Margin = 63.04°, greater than 60°.**
+
 ## References
 1. Behzad Razavi. *Design of Analog CMOS Integrated Circuits*. McGraw Hill Higher Education; 2001.
 2. P. E. Allen, D. R. Holberg. *CMOS Analog Circuit Design*. Oxford University Press; 2002.
